@@ -1,0 +1,22 @@
+{
+  "name": "vue-js",
+  "version": "1.0.0",
+  "description": "Pasta de trabalho para o curso Vue JS da Udemy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanRezende/curso-vuejs.git"
+  },
+  "author": "jonathan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonathanRezende/curso-vuejs/issues"
+  },
+  "homepage": "https://github.com/JonathanRezende/curso-vuejs#readme",
+  "dependencies": {
+    "vue": "^2.5.2"
+  }
+}
