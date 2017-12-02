@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Praticando Vue</title>
+  <script src="node_modules/vue/dist/vue.js"></script>
+
+</head>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+
+  body {
+    margin: 20px;
+  }
+</style>
+
+<body>
+  <div id="app">{{message}}</div>
+  <br>
+
+  <div id="app-3">
+    <button v-on:click="changeSeen"> Click </button>
+    <p v-if="seen">Agora você me viu</p>
+  </div>
+  <br>
+
+  <div id="app-7">
+    <div>
+      <!--
+            Agora provemos cada todo-item com o objeto todo que ele
+            representa, de forma que seu conteúdo possa ser dinâmico.
+            Também precisamos prover cada componente com uma "chave",
+            a qual será explicada posteriormente.
+          -->
+      <todo-item v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+    </div>
+  </div>
+
+
+  <script src="practice.js"></script>
+</body>
+
+</html>
